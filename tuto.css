@@ -1,0 +1,16 @@
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+} 
+
+input[type="reset"], input[type="submit"], #co-buts div button {
+	width: 48%;
+	margin-bottom: 0.5em;
+}
+
+}
+
+hr {
+	border : outset 1px;
+	margin : 0.5em 5em 0.5em 4em;
+}
