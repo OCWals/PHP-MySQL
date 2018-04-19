@@ -32,7 +32,7 @@
 					</form>
 					<?php 
 						try {
-							$bdd = new PDO('mysql:host=localhost; dbname=mini-chat; charset=utf8', 'root', 'root');
+							$bdd = new PDO('mysql:host=localhost; dbname=mini-chat; charset=utf8', 'root');
 						} catch (Esception $e) {
 							echo ('Une erreur a été recontrée :<br>');
 							die('Erreur : ' . $e -> getMessage());

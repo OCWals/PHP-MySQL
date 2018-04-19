@@ -21,7 +21,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					
 					<form method="post" action="scriptMiniChat.php" class="form">
 						<input type="texte" name="pseudo" placeholder="Votre pseudo..." class="form-control">
 						<div class="input-group">
@@ -34,7 +33,7 @@
 					<hr>
 					<?php 
 						try {
-							$bdd = new PDO('mysql:host=localhost; dbname=mini-chat; charset=utf8', 'root', 'root');
+							$bdd = new PDO('mysql:host=localhost; dbname=mini-chat; charset=utf8', 'root');
 						} catch (Esception $e) {
 							echo ('Une erreur a été recontrée :<br>');
 							die('Erreur : ' . $e -> getMessage());

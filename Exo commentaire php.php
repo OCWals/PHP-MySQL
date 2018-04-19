@@ -23,19 +23,17 @@
 	}
 
 	displayIfNumberGreather(15);									// Appel de la fonction displayIfNumberGreather avec 15 en parametre. affichage it is greather than 10
-
 	displayIfNumberGreather($x + $y + 3);							// Appel de la fonction displayIfNumberGreather avec 17 (5+9+3) en parametre. affichage it is greather than 10
 
 	$cars = array("Volvo", "BMW", "Toyota");						// Création d'une variable array $cars contenant "Volvo", "BMW", "Toyota"
 
-	for ($a = 0; $a <= 2; $a++) {									// Parcours un à un les trois premiers éléments du tableau $cars
-																	// Pour $a = 0 , tant que $a <= 2, alors j'execute la boucle et j'incrémente $a en fin de boucle 
+	for ($a = 0; $a <= 2; $a++) {									// Parcours un à un les trois premiers éléments du tableau $cars. Pour $a = 0 , tant que $a <= 2, alors j'execute la boucle et j'incrémente $a en fin de boucle 
 	    echo "There is a new car created by ".$cars[$a];			// Afficher à chaque tour "There is a new car created by Volvo / BMW / Toyota"
 	}
 
 	function afficheNumberOfElemInArray($tab){						// Définition d'une fonction afficheNumberOfElemInArray
-	  $numberOfElem = count($tab);									// Création d'une variable $numberOfElem contenant le nombre d'éléments du tableau rentré en 																	  					  parametre (grace à la fonction count() qui prend elle aussi un tableau en parametre)
-	  echo "There are ".$numberOfElem." in the tab";				// Afficher le nombre d'éléments du dit tableau sous la forme "There are x in the tab"
+	  $numberOfElem = count($tab);									// Création d'une variable $numberOfElem contenant le nombre d'éléments du tableau rentré en parametre (à la fonction qu'on definie, donc à la fonction count() également) 
+	  echo "There are " . $numberOfElem . " in the tab";			// Afficher le nombre d'éléments du dit tableau sous la forme "There are x in the tab"
 	}
 
 	function getNumberOfElem($tab){									// Définition d'une fonction getNumberOfElem qui prend un tableau en parametre;
@@ -44,7 +42,5 @@
 
 	$tablo = array("elem1", "elem2", "elem3");						// Création d'une variable array $tablo contenant "elem1", "elem2", "elem3"
 
-	$elem = getNumberOfElem($tablo);								// Création d'une variable $elem contenant 3, soit le nombre d'éléments du tableau $tablo recuperé 																						grace à l'appel de la fonction getNumberOfElem
-	
-
+	$elem = getNumberOfElem($tablo);								// Création d'une variable $elem contenant 3, soit le nombre d'éléments du tableau $tablo recuperé grace à l'appel de la fonction getNumberOfElem
 ?>
